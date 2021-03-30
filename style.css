@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins";
+	text-decoration: none;
+	list-style: none;
+	--yellow: rgb(236, 214, 12);
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.288);
+	min-height: 7vh;
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	background: white;
+}
+
+.logo{
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-weight: 500;
+    margin-right: 100px;
+}
+
+.logo span{
+	font-weight: 700;
+	color: var(--yellow);
+}
+
+.nav-links{
+	display: flex;
+	align-items: center;
+}
+
+.nav-links li{
+	margin: 0px 20px;
+}
+
+.nav-links li a{
+	color: black;
+	letter-spacing: 0.1rem;
+	font-size: 0.9rem;
+}
+
+.nav-links li:nth-child(6) a{
+	padding: 7px 30px;
+	background: var(--yellow);
+}
+
+.home{
+	padding-top: 7vh;
+	height: 700px;
+	position: relative;
+  text-align: center;
+	background-image: url("Eggs.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.home::after{
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.26);
+}
+.title h1, span{
+  color:white;
+}
