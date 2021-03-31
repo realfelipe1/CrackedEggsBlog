@@ -1,9 +1,5 @@
 <!--
     - Yellow, light yellow, and white as the website theme
-
-    - Don't add the other people until we finished the layout and stuff so they can only complain and make changes, not deleting what other people have done and arguing lol
-
-    - Lmao actually work on it for once pleaseee
 -->
 
 <!DOCTYPE html>
@@ -11,36 +7,154 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Cracked Eggs Blog</title>
+    <title>Cracked Eggs 🍳 Blog</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="logo.png">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&	display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c8f4d67ea6.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   </head>
   <body>
 
+		<div class="filter"></div>
+
+		<div class = "modal">
+			<button class = "modal-leave" onclick="removeModal()"><i class="fas fa-times"></i></button>
+
+			<h2>Sign up for our newsletter</h2>
+			<p>Get our latest news about our members and new updates to the website.</p>
+
+			<form>
+				<input type="email" placeholder="Email adress..." required autocomplete="off">
+				<button type="submit">Submit</button>
+			</form>
+
+			<img src="images/other-images/favicon.png" alt="">
+		</div>
+
 		<nav>
-			<h2 class="logo">The <span>Cracked</span> Eggs</h2>
+			<h2 class="logo">The <span>Cracked</span> Eggs 🍳</h2>
 
 			<ul class="nav-links">
-				<li><a href="#" class="nav-links-home">Home</a></li>
-				<li><a href="#" class="nav-links-posts">Posts</a></li>
-				<li><a href="#" class="nav-links-newsfeed">Newsfeed</a></li>
-				<li><a href="#" class="nav-links-about">About</a></li>
-				<li><a href="#" class="nav-links-members">Members</a></li>
-				<li><a href="#" class="nav-links-contact">Contact</a></li>
+				<li><a href="#" class="nav-links-home nav-link">Home</a></li>
+				<li><a href="#posts" class="nav-links-posts nav-link">Posts</a></li>
+				<li><a href="#newsfeed" class="nav-links-newsfeed nav-link">Newsfeed</a></li>
+				<li><a href="#about" class="nav-links-about nav-link">About</a></li>
+				<li><a href="#members" class="nav-links-members nav-link">Members</a></li>
+				<li><a href="#contact" class="nav-links-contact">Contact</a></li>
 			</ul>
 		</nav>
 
 		<div class="home">
-			<div class="parallax"></div>
-
 			<div class="title">
-				<h1>The <span>Cracked</span> Eggs</h1>
-				<p></p>
+				<h1>The <span>Cracked</span> Eggs 🍳</h1>
+				<p>The Cracked Eggs 🍳 are a group of friends that get along really well. They hang out, play video games, and code together. We have fun and the best time of our lives. It only started with 6 people but it slowly expanded. Now, we have a total of 13 members that are the greatest friends alive.</p>
+
+				<div class="links">
+					<a href="#">Members</a>
+					<a href="#">Contact</a>
+				</div>
 			</div>
 		</div>
 
-    <script src="script.js"></script>
+		<div id="posts">
+			<h1 class="section-title">Posts</h1>
+			
+			<div class="posts">
+				<div class="post">
+					<div class="post-image">
+						<img src="images/post-images/Canyon.jpg">
+
+						<div class="read-more">
+							<a href="#">Read More</a>
+						</div>
+					</div>
+
+					<div class="post-description">
+						<div class="post-title">
+							<h2>Grand Canyon</h2>
+							<p>By: Minjun</p>
+						</div>
+
+						<div class="date">
+							<h3>3/31/21</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="post">
+					<div class="post-image">
+						<img src="images/post-images/pog.png">
+
+						<div class="read-more">
+							<a href="#">Read More</a>
+						</div>
+					</div>
+
+					<div class="post-description">
+						<div class="post-title">
+							<h2>poggers</h2>
+							<p>By: krish</p>
+						</div>
+
+						<div class="date">
+							<h3>3/31/21</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="post">
+					<div class="post-image">
+						<img src="images/post-images/Allergies.jpg">
+
+						<div class="read-more">
+							<a href="#">Read More</a>
+						</div>
+					</div>
+
+					<div class="post-description">
+						<div class="post-title">
+							<h2>Spring Allergies</h2>
+							<p>By: Minjun</p>
+						</div>
+
+						<div class="date">
+							<h3>3/31/21</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="more-posts">
+				<a href="#">More Posts</a>
+			</div>
+		</div>
+
+		<div id="newsfeed">
+			<h1 class="section-title">Newsfeed</h1>
+
+			
+		</div>
+
+		<div id="about">
+			<div class="about-section">
+				<div class="inner-container">
+					<h1>About Us</h1>
+					<p class="text">The Cracked Eggs are very social and look out for each other. We all look out for each other and get along great. The members of the cracked eggs consist of Jeisa, Minjun, Soha, Elizabeth, Rohit, Krish, Arshveer, Sahil, Anna, Vladi, Owen, and Shay. Ages ranging from 15-9, we code, we laugh, we have fun, and we argue</p>
+				</div>
+			</div>
+		</div>
+
+      <div class="newsfeed">
+           <div class="u"></div>
+      </div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="modal.js"></script>
   </body>
 </html>
