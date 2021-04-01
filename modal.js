@@ -1,3 +1,6 @@
+// www.sitepoint.com/delay-sleep-pause-wait
+function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}
+
 const modalAnimation = new TimelineMax();
 
 const modal = document.querySelector(".modal");
@@ -8,7 +11,10 @@ modalAnimation.fromTo(modal, 1, {opacity: 0, scale: 0}, {opacity: 1, scale: 1, e
 filter.style.display = "block";
 
 // Make the advertisement hidden
-function removeModal() {
+async function removeModal() {
+	modal.style.opacity = "0";
+	filter.style.opacity = "0";
+	await sleep(500);
 	modal.style.display = "none";
 	filter.style.display = "none";
 }

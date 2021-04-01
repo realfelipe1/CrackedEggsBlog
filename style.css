@@ -1,13 +1,23 @@
 *{
-	margin: 0;
+  margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Poppins";
 	text-decoration: none;
   scroll-behavior: smooth;
 	list-style: none;
+}
+body{
+	overflow-y: overlay;
+  overflow-x: hidden;
+	/* dont remove pls */
+}
+
+:root{
 	--yellow: rgb(255, 230, 0);
+	/* WHY WOULD YOU MAKE A WHITE VARIABLE, IT IS MUCH EASIER JUST TO WRITE #FFF OR WHITE INSTEAD OF THE VARIABLE */
   --white: #fff;
+	--lightyellow: rgb(255, 241, 115);
 }
 
 ::placeholder{
@@ -21,6 +31,7 @@
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.548);
+	transition: .5s all ease-in-out;
 	z-index: 999;
 	/* display: none; */
 }
@@ -45,7 +56,7 @@
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%) scale(0);
 	z-index: 1000;
 	background: rgba(255, 255, 255, 0.795);
 	min-height: 600px;
@@ -56,6 +67,8 @@
 	justify-content: center;
 	padding: 0px 40px;
 	border-radius: 5px;
+	opacity: 0;
+	transition: .5s all ease-in-out;
 }
 
 .modal h2{
