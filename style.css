@@ -7,6 +7,7 @@
   scroll-behavior: smooth;
 	list-style: none;
 }
+
 body{
 	overflow-y: overlay;
   overflow-x: hidden;
@@ -15,7 +16,6 @@ body{
 
 :root{
 	--yellow: rgb(255, 230, 0);
-	/* WHY WOULD YOU MAKE A WHITE VARIABLE, IT IS MUCH EASIER JUST TO WRITE #FFF OR WHITE INSTEAD OF THE VARIABLE */
   --white: #fff;
 	--lightyellow: rgb(255, 241, 115);
 }
@@ -33,7 +33,6 @@ body{
 	background: rgba(0, 0, 0, 0.548);
 	transition: .5s all ease-in-out;
 	z-index: 999;
-	/* display: none; */
 }
 
 .modal-leave{
@@ -391,4 +390,149 @@ nav{
   line-height: 30px;
   text-align: justify;
   margin-bottom: 40px;
+}
+
+/*  news feed*/
+
+#newsfeed{
+  padding: 5% 10%;
+	background: rgb(247, 247, 247);
+}
+
+.newsfeed-row{
+  display: flex;
+  justify-content: space-between;
+  margin: 3% 0%;
+  align-items: center;
+  padding: 3%;
+  background-color: #fffacd;
+}
+
+.row-topic{
+  padding: 4px 8px;
+  background-color: var(--yellow);
+  border-radius: 13px;
+  width: 70px;  
+}
+
+.row-text p{
+  margin-bottom: 2%;
+}
+
+.newsfeed-row img{
+  width: 20%;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.newsfeed-container a{
+  text-align: center;
+  color: black;
+  background-color: var(--yellow);
+	padding: 10px 30px;
+}
+
+
+
+/* member */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact */
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  padding: 20px 100px;
+  background-color: white;
+}
+
+.contact-box{
+  font-family: 'Raleway';
+	/* max-width: 900px; */
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("images/about-images/Eggs.jpg") no-repeat center;
+	background-size: cover;
+  height: 100%;
+  cursor: default;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+
+.members{
+margin-left: 90px;
+}
+
+.member{
+  width: 30%;
+  height: 30%;
+  border: 2px solid black;
+  padding: 20px;
+  display: inline-block;
+}
+
+.members .member img{
+  width: 100px;
 }
