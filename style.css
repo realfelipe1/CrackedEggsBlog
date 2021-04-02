@@ -31,6 +31,7 @@ body{
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.548);
+	backdrop-filter: blur(5px);
 	transition: .5s all ease-in-out;
 	z-index: 999;
 }
@@ -420,9 +421,11 @@ nav{
 }
 
 .newsfeed-row img{
-  width: 20%;
+  width: 500px;
   border-radius: 5px;
   border: 1px solid white;
+	object-fit: cover;
+	height: 300px;
 }
 
 .newsfeed-container a{
@@ -432,23 +435,46 @@ nav{
 	padding: 10px 30px;
 }
 
-
-
 /* member */
+#members{
+	padding: 7rem 5rem;
+	background: rgb(247, 247, 247);
+}
 
+.members{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
 
+.member{
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: white;
+	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.308);
+	width: 300px;
+	margin: 40px 20px;
+	border-radius: 7px;
+	height: 400px;
+	position: relative;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.member img{
+	width: 150px;
+	height: 150px;
+	border: 10px solid rgb(247, 247, 247);
+	border-radius: 50%;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.116);
+	object-fit: cover;
+	position: absolute;
+	left: 50%;
+	top: -10%;
+	transform: translate(-50%, -10%);
+}
 
 /* contact */
 .container{
@@ -475,7 +501,7 @@ nav{
 }
 
 .left{
-	background: url("images/about-images/Eggs.jpg") no-repeat center;
+	background: url("images/contact-images/crack.jpg") no-repeat center;
 	background-size: cover;
   height: 100%;
   cursor: default;
@@ -517,22 +543,5 @@ textarea{
 }
 
 .btn:hover{
-    background-color: #27ae60;
-}
-
-
-.members{
-margin-left: 90px;
-}
-
-.member{
-  width: 30%;
-  height: 30%;
-  border: 2px solid black;
-  padding: 20px;
-  display: inline-block;
-}
-
-.members .member img{
-  width: 100px;
+	background-color: #27ae60;
 }
