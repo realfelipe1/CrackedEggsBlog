@@ -76,6 +76,19 @@ body{
 	letter-spacing: 0.1rem;
 	font-weight: 600
 }
+  ::-webkit-scrollbar {
+    width: 15px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: rgb(65, 65, 65); 
+    border-radius: 10px 0 0 10px;
+    }
+    
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: rgb(196, 196, 196); 
+    }
 
 .modal p{
 	text-align: center;
@@ -415,7 +428,6 @@ nav{
   border-radius: 13px;
   width: 70px;  
 }
-
 .row-text p{
   margin-bottom: 2%;
 }
@@ -456,10 +468,10 @@ nav{
 	justify-content: center;
 	background: white;
 	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.308);
-	width: 300px;
+	width: 400px;
 	margin: 40px 20px;
 	border-radius: 7px;
-	height: 400px;
+	height: 500px;
 	position: relative;
 }
 
@@ -475,6 +487,83 @@ nav{
 	top: -10%;
 	transform: translate(-50%, -10%);
 }
+
+.member h2{
+	font-weight: 600;
+	margin-top: 30px;
+}
+
+.member h3{
+	font-weight: 500;
+}
+
+.member p{
+	text-align: center;
+	padding: 1rem 2rem;
+}
+
+.skills{
+	display: flex;
+	margin-top: 10px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.skills p{
+	padding: 2px 20px;
+	border-radius: 40px;
+	margin: 5px;
+}
+
+.html{
+	background: rgb(223, 20, 20);
+	color: white;
+}
+
+.css{
+	background: rgb(0, 140, 255);
+	color: white;
+}
+
+.scratch{
+	background: orange;
+}
+
+.js{
+	background: var(--yellow);
+}
+
+.java{
+	background: coral;
+}
+
+
+.php{
+	background: lightpink;
+}
+
+.unity{
+  background: #000;
+  color:white;
+}
+
+.python{
+  background: green;
+	color: white;
+}
+
+.github{
+  background: lightgreen;
+}
+
+.gsap{
+  background:#27ae60;
+}
+
+.c0{
+  background: rgb(0, 162, 255);
+}
+
 
 /* contact */
 .container{
