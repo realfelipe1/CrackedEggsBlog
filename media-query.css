@@ -1,0 +1,186 @@
+@media(max-width: 1100px){
+	nav{
+		justify-content: space-between;
+		padding: 0rem 2rem;
+	}
+
+	.logo{
+		margin-right: 0px;
+	}
+
+	.nav-links{
+		position: fixed;
+		height: 93vh;
+		background: rgb(249, 249, 249);
+		top: 7%;
+		right: -300px;
+		width: 300px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.5s ease;
+	}
+
+
+  .dark .nav-links, .dark .nav-links-contact{
+    background: rgb(44, 44, 44);
+    color: white;
+  }
+
+	.nav-links li{
+		margin: 20px 0px;
+	}
+
+	.nav-links li:nth-child(6) a{
+		padding: 0px;
+		background: none;
+		transition: all 0.5s ease;
+		border-radius: 0px;
+	}
+
+	.nav-links li:nth-child(6) a:hover{
+		padding: 0px;
+	}
+
+	.nav-links li:nth-child(6) a::after{
+		display: block;
+	}
+
+	.nav-links li:nth-child(6) a:hover::after{
+		width: 100%;
+	}
+
+	.active{
+		right: 0px;
+	}
+
+	.hamburger{
+		display: block !important;
+	}
+
+	.title h1{
+		font-size: 5rem;
+		padding: 20px;
+	}
+
+	.title p{
+		display: none;
+	}
+
+	#newsfeed{
+		padding: 8rem 3rem;
+	}
+
+	.newsfeed-row{
+		margin-bottom: 30px;
+		justify-content: center;
+	}
+
+	.newsfeed-row img{
+		display: none;
+	}
+
+	.row-topic{
+		display: none;
+	}
+
+	.newsfeed-row h1{
+		font-size: 1.2rem;
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	.newsfeed-row p{
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	#contact form .left img{
+		display: none;
+	}
+
+	#about{
+		padding: 7rem 2rem;
+	}
+
+	.inner-container{
+		width: 100%;
+		text-align: center;
+		padding: 30px 10px;
+		display: block !important;
+		float: none;
+	}
+
+	.inner-container h1{
+		text-align: center;
+	}
+
+	.about-section{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-position: center;
+	}
+}
+
+/* phone */
+@media(max-width: 600px){
+	.modal{
+		display: none;
+	}
+
+	#about{
+		padding: 7rem 0.5rem;
+	}
+
+	.filter{
+		display: none !important;
+	}
+
+	.title h1{
+		font-size: 3.5rem;
+	}
+
+	.links a{
+		font-size: 0.8rem;
+	}
+
+	.section-title{
+		font-size: 2rem;
+	}
+
+	.logo{
+		font-size: 100%;
+	}
+
+	.darkmode{
+		display: none;
+	}
+
+	#members{
+		padding: 7rem 0.5rem;
+	}
+
+	.skills{
+		display: none;
+	}
+
+	#posts{
+		padding: 7rem 0.1rem;
+	}
+
+	.post{
+		width: 130%;
+	}
+
+	.about-section{
+		background: none;
+	}
+  :target .dark .hamburger .burger .hamburger-box .hamburger-inner span{
+  color: white !important;
+}
+
+:target .dark .hamburger{
+  color: white !important;
+}
+}

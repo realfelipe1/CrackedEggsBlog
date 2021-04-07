@@ -1,0 +1,2 @@
+// surgewireless.netlify.app
+var load=document.getElementById("load");let userAgentString=navigator.userAgent,chromeAgent=userAgentString.indexOf("Chrome")>-1,IExplorerAgent=userAgentString.indexOf("MSIE")>-1||userAgentString.indexOf("rv:")>-1,firefoxAgent=userAgentString.indexOf("Firefox")>-1,safariAgent=userAgentString.indexOf("Safari")>-1;chromeAgent&&safariAgent&&(safariAgent=!1);let operaAgent=userAgentString.indexOf("OP")>-1;chromeAgent&&operaAgent&&(chromeAgent=!1),safariAgent&&(load.style.display="none");$(window).on("load",function(){$(".load").fadeOut("slow")});

@@ -1,0 +1,94 @@
+/* darkmode pogggggggg*/
+.switch {
+  align-self: flex-end;
+  margin: 0.9375rem;
+}
+
+.inner-switch {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #555;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1rem;
+	padding: 0.5px 15px;
+}
+
+.dark, .dark body, .dark #newsfeed, .dark #members, .dark nav, .dark #newsfeed .newsfeed-row, .dark footer, .dark footer h2, .dark footer .fab, .dark .inner-container, .dark footer .copyright{
+  background-color: rgb(44, 44, 44);
+    color: white;
+    transition: 0.3s all;
+}
+
+ .dark nav .nav-link-contact li a{
+   color: black;
+ }
+
+.dark .newsfeed-row .row-topic p{
+  color: black;
+}
+
+.dark .inner-container h1{
+  color:white;
+}
+
+.dark .inner-container .text p{
+  color:white;
+}
+
+.dark .member{
+    background-color: rgb(44, 44, 44);
+    color: white; 
+}
+
+
+.dark .modal h2, .dark .modal p{
+  color: black;
+}
+
+.dark nav .nav-links-home, .dark nav .nav-links-about, .dark nav .nav-links-posts, .dark nav .nav-links-newsfeed, .dark nav .nav-links-members{
+  color: white;
+}
+
+.dark .hamburger .hamburger-box .hamburger-inner nav .nav-links-side li a{
+  color: black;
+}
+.darkmode{
+  position: fixed;
+  overflow: hidden;
+  /* float: right; */
+  z-index: 1;
+  right: 9px;
+  bottom: 0px;
+  transition: 0.2s linear;
+}
+
+.dark .logo a{
+  color: white;
+}
+
+.dark #about .about-section .inner-container .text p{
+  color: white;
+}
+
+.dark #members .member img{
+ 	width: 150px;
+	height: 150px;
+	border: 10px solid rgb(65, 65, 65);
+	border-radius: 50%;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.116);
+	object-fit: cover;
+	position: absolute;
+	left: 50%;
+	top: -10%;
+	transform: translate(-50%, -10%);
+}
+
+.dark #newsfeed .newsfeed-container .newsfeed-row img{
+  border: 1px solid rgb(65, 65, 65);
+}
+
+ .dark footer, .dark footer h2, .dark footer .fab{
+  background: rgb(65, 65, 65);
+  color: white;
+}

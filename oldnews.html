@@ -3,28 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>JS Red Belt: MOVIES</title>
+    <title>All News | CrackedEggsBlog</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="darkmode.css" rel="stylesheet" type="text/css" />
+    <link href="media-query.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="media-query.css">
     <link rel="icon" type="image/png" href="logo.png">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&	display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hamburgers@1.1.3/dist/hamburgers.css">
     <script src="https://kit.fontawesome.com/c8f4d67ea6.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     
     <nav>
-			<h2 class="logo">The <span>Cracked</span> Eggs</h2>
+			<h2 class="logo"><a href= "index.html">The <span>Cracked</span> Eggs</a></h2>
 
 			<ul class="nav-links">
 				<li><a href="index.html" class="nav-links-home nav-link">Home</a></li>
-				<li><a href="#posts" class="nav-links-posts nav-link">Posts</a></li>
-				<li><a href="#newsfeed" class="nav-links-newsfeed nav-link">Newsfeed</a></li>
-				<li><a href="#about" class="nav-links-about nav-link">About</a></li>
-				<li><a href="#members" class="nav-links-members nav-link">Members</a></li>
-				<li><a href="#contact" class="nav-links-contact">Contact</a></li>
+				<li><a href="index.html#posts" class="nav-links-posts nav-link">Posts</a></li>
+				<li><a href="index.html#newsfeed" class="nav-links-newsfeed nav-link">Newsfeed</a></li>
+				<li><a href="index.html#about" class="nav-links-about nav-link">About</a></li>
+				<li><a href="index.html#members" class="nav-links-members nav-link">Members</a></li>
+				<li><a href="index.html#contact" class="nav-links-contact">Contact</a></li>
 			</ul>
+
+			<button class="hamburger burger hamburger--squeeze" type="button">
+  			<span class="hamburger-box">
+    			<span class="hamburger-inner">
+          </span>
+  			</span>
+			</button>
 		</nav>
 
 		<div class="home">
@@ -32,18 +43,93 @@
 				<h1>OLD NEWS</h1>		
 			</div>
 		</div>
+		
 
+		<div id="newsfeed">
+			<div class="newsfeed-row">
+				<div data-aos="fade-up"  class="row-text">
+					<div class="row-topic">
+						<p>BLOG</p>
+					</div> 
 
+					<h1 data-aos="fade-right">The Cracked Eggs Blog Is Released!</h1>
+					<p data-aos="fade-right">Post by The Cracked Eggs (April 20, 2021)</p>
+				</div>
 
+				<img data-aos="fade-left"  src= "images/home-images/egg.jpg">
+			</div>
 
+			<div class="newsfeed-row">
+				<div class= "row-text">
+					<div data-aos="fade-up"  class= "row-topic">
+						<p>BLOG</p>
+					</div>
 
+					<h1 data-aos="fade-right">The Cracked Eggs Blog Is Now Starting Development</h1>
+					<p data-aos="fade-right">Post by The Cracked Eggs (March 26, 2021)</p>
+				</div>
+
+				<img data-aos="fade-left"  src= "images/home-images/egg.jpg">
+			</div>
+					
+
+			<div class="newsfeed-row">
+				<div class="row-text">
+					<div data-aos="fade-up" class="row-topic">
+						<p>NEWS</p>
+					</div>
+
+					<h1 data-aos="fade-right">The Cracked Eggs is created!</h1>
+					<p data-aos="fade-right">Post by The Cracked Eggs (September 1, 2020)</p>
+				</div>
+
+				<img data-aos="fade-left"  src= "images/home-images/egg.jpg">
+			</div>
+		</div>
+
+		<div class="toggle">
+      <div id="dark_mOde" class="switch darkmode display_none"> <span class="dark-mode-label">Dark Mode:</span> <span class="inner-switch" id="button23">OFF</span> </div>
+  	</div>
+
+		<footer>
+			<h2>The <span>Cracked</span> Eggs</h2>
+
+			<ul class="icons">
+				<li><a href = "https://github.com/crackedeggs" target="_blank"><i class="fab fa-github"></i></a></li>
+				<li><a href="https://www.instagram.com/crackedeggs13" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.twitter.com/crackedeggs13" target="_blank"><i class="fab fa-twitter"></i></a></li>
+			</ul>
+
+			<div class="copyright">
+				<p>The Cracked Eggs © 2021 | All rights reserved</p>
+			</div>
+		</footer>
+
+		<script>
+         		// If darkmode is on display white text
+         		$('.darkmode').css('color', 'white');
+         		$('.dark-mode-label').css('color', 'white');
+              else {
+         		$('.darkmode').css('color', 'black');
+         		$('.dark-mode-label').css('color', 'black');
+         	}
+        }
+    </script>
+
+		<script>
+      AOS.init();
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="modal.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="jquery-2.1.4.js"></script>
+    <script src="javascript/darkmode.js"></script>
+		<script src="javascript/load.js"></script>
+		<script src="javascript/hamburger.js"></script>
   </body>
   </body>
 </html>

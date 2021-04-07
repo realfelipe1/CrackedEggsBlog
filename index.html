@@ -1,21 +1,38 @@
 <!--
   The Cracked Eggs © 2021
 
-  NOTICE: The Cracked Eggs Blog belongs to the Cracked Eggs, and under no circumstances can you copy any part (big or small) of the code or fork the project. Please do know that there will be consequences. Thank you for your understanding 😊
+  NOTICE: The Cracked Eggs Blog belongs to the Cracked Eggs, and under no circumstances can you copy any part (big or small) of the code or fork the project. Please do know that there will be consequences. Thank you for your understanding.
 
-  For any further questions, email dozencrackedeggs@gmail.com. We will get back to you as soon as possible (no spam).
+	Credits:
+		Thanks to Anna, Krish, Liz, Jeisa, Vladi, and Minjun for creating this blog
+		Thanks to Yalu Ye for preload animation: https://codepen.io/yaluye
+		Thanks to Krish for making darkmode
 
-  If you have a personal question for a specific person (that feels comfortable with their email in the list down below), please email their own emails.
-  
-    Jeisa - xaediaa@gmail.com
-    Liz - elizthegr8@gmail.com
-    Minjun - minjunroe@gmail.com
-    Krish - krishsuisun@gmail.com
-    Emily - emilytrif@gmail.com
+  FOR QUESTIONS:
+    For any further questions, email dozencrackedeggs@gmail.com. We will get back to you as soon as possible. Please do not spam, as that wastes our time as well as yours and clogs up storage space.
 
-    Please do not contact emails just to spam them, you will be immediately blocked. We have all rights to not respond or answer questions that are emailed to us. If you say something innapropriate or something that makes us uncomfortable and a student of Hackingtons, you will be reported immediately. 
+    If you have a personal question for a specific person (that feels comfortable with their email in the list down below), please email their own personal emails.
+    
+      Jeisa - xaediaa@gmail.com
+      Liz - elizthegr8@gmail.com
+      Minjun - minjunroe@gmail.com
+      Krish - krishsuisun@gmail.com
+      Emily - emilytrif@gmail.com
+      Vladi - vladikh06@gmail.com
 
-  Thank You.
+      Please do not contact us just to spam, you will be immediately blocked. We have all rights to not respond or answer questions that are emailed to us, especially for questions that might be too personal.
+
+        Please keep in mind that everyone in the Cracked Eggs are students, with their own responsibilities, schoolwork, and extracurriculars. We apologize if we missed your question/comment or if we do not respond right away.
+
+        If you say something innapropriate or something that makes us uncomfortable and you are a student of Hackingtons, you will be reported immediately. If you start the spam & don't stop, you will be reported and blocked to gmail/google and/or Hackingtons if you are a student.
+
+
+  BUGS:
+    If you spot any bugs, you may contact us at dozencrackedeggs@gmail.com with the subject of Cracked Eggs Blog - Bugs. We will try our best to fix it within a few days.
+
+    Again, keep in mind that the Cracked Eggs are all students with busy schedules, so it is possible that we might not be able to fix bugs immediately.
+
+  Thank You For Reading.
 -->
 
 <!DOCTYPE html>
@@ -25,14 +42,30 @@
     <meta name="viewport" content="width=device-width">
     <title>Cracked Eggs Blog</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <link rel="stylesheet" href="loader.css">
     <link rel="icon" type="image/png" href="logo.png">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hamburgers@1.1.3/dist/hamburgers.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&	display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c8f4d67ea6.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://kit.fontawesome.com/c8f4d67ea6.js" crossorigin="annonymous"></script>
+    <!-- Minjun Don't Remove If you even switch the .js link it wont work, i think or its probably because you removed AOS.INIT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
+
+    <div class="loader-bg">
+			<div class="loader-box">
+				<h1>Loading Blog...</h1>
+      	
+				
+			</div>
+    </div>
+		
+    <!-- Don't add inline-styling it causes bugs -krish -->
 		<div class="filter" onclick="removeModal()"></div>
 
 		<div class = "modal">
@@ -42,24 +75,33 @@
 			<p>Get our latest news about our members and new updates to the website.</p>
 
 			<form action="dozenofcrackedeggs@gmail.com">
-				<input type="email" placeholder="Email adress..." required autocomplete="off">
+				<input type="email" placeholder="Email adress..." required>
 				<button type="submit">Submit</button>
 			</form>
+
+			<div class="email"></div>
 
 			<img src="images/other-images/favicon.png" alt="">
 		</div>
     
 		<nav>
-			<h2 class="logo">The <span>Cracked</span> Eggs</h2>
+			<h2 class="logo"><a href= "index.html">The <span>Cracked</span> Eggs</a></h2>
 
 			<ul class="nav-links">
-				<li><a href="#" class="nav-links-home nav-link">Home</a></li>
-				<li><a href="#posts" class="nav-links-posts nav-link">Posts</a></li>
-				<li><a href="#newsfeed" class="nav-links-newsfeed nav-link">Newsfeed</a></li>
-				<li><a href="#about" class="nav-links-about nav-link">About</a></li>
-				<li><a href="#members" class="nav-links-members nav-link">Members</a></li>
-				<li><a href="#contact" class="nav-links-contact">Contact</a></li>
+				<li><a href="#" class="nav-links-side nav-links-home nav-link">Home</a></li>
+				<li><a href="#posts" class="nav-links-side nav-links-posts nav-link">Posts</a></li>
+				<li><a href="#newsfeed" class="nav-links-side nav-links-newsfeed nav-link">Newsfeed</a></li>
+				<li><a href="#about" class="nav-links-side nav-links-about nav-link">About</a></li>
+				<li><a href="#members" class="nav-links-side nav-links-members nav-link">Members</a></li>
+				<li><a href="#contact" class="nav-links-side nav-links-contact">Contact</a></li>
 			</ul>
+
+			<button class="hamburger burger hamburger--squeeze" type="button">
+  			<span class="hamburger-box">
+    			<span class="hamburger-inner">
+          </span>
+  			</span>
+			</button>
 		</nav>
 
 		<div class="home">
@@ -78,18 +120,42 @@
 			<h1 class="section-title">Posts</h1>
 			
 			<div class="posts">
-				<div class="post">
+        <div data-aos="fade-right" class="post">
+					<div class="post-image">
+						<img src="images/post-images/icecream.jpeg">
+
+						<div class="read-more">
+							<a href = "#">Read More</a>
+						</div>
+					</div>
+
+					<div class="post-description">
+						<div class="post-title">
+							<h2>Cookies and Cream Ice Cream</h2>
+              <!-- <p class = "post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper dignissim cras tincidunt lobortis. Quis viverra nibh cras pulvinar mattis nunc sed. Adipiscing enim eu turpis egestas pretium aenean.</p> -->
+							<p>By: AnnaBannana</p>
+						</div>
+
+						<div class="date">
+							<h3>4/5/21</h3>
+						</div>
+				  </div>
+				</div>
+
+
+				<div data-aos="fade-left" class="post">
 					<div class="post-image">
 						<img src="images/post-images/Canyon.jpg">
 
 						<div class="read-more">
-							<a href="#">Read More</a>
+							<a href = "javascript:void(0)">Read More</a>
 						</div>
 					</div>
 
 					<div class="post-description">
 						<div class="post-title">
 							<h2>Grand Canyon</h2>
+              <!-- <p class = "post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper dignissim cras tincidunt lobortis. Quis viverra nibh cras pulvinar mattis nunc sed. Adipiscing enim eu turpis egestas pretium aenean.</p> -->
 							<p>By: Minjun</p>
 						</div>
 
@@ -99,18 +165,15 @@
 				  </div>
 				</div>
 
-				<div class="post">
+				<div data-aos="fade-up" class="post">
 					<div class="post-image">
 						<img src="images/post-images/pog.png">
 
-						<div class="read-more">
-							<a href="#">Read More</a>
-						</div>
-					</div>
 
 					<div class="post-description">
 						<div class="post-title">
 							<h2>poggers</h2>
+              <!-- <p class = "post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper dignissim cras tincidunt lobortis. Quis viverra nibh cras pulvinar mattis nunc sed. Adipiscing enim eu turpis egestas pretium aenean.</p> -->
 							<p>By: krish</p>
 						</div>
 
@@ -119,83 +182,69 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="post">
-					<div class="post-image">
-						<img src="images/post-images/Allergies.jpg">
-
-						<div class="read-more">
-							<a href="#">Read More</a>
-						</div>
-					</div>
-
-					<div class="post-description">
-						<div class="post-title">
-							<h2>Spring Allergies</h2>
-							<p>By: Minjun</p>
-						</div>
-
-						<div class="date">
-							<h3>3/31/21</h3>
-						</div>
-					</div>
-				</div>
 			</div>
 
-			<div class="more-posts">
-				<a href="#">More Posts</a>
-			</div>
+      <div data-aos="flip-down" class="more-posts">
+        <a href= "posts.html">More Posts</a>
+      </div>
 		</div>
+  </div>
 
 		<div id="newsfeed">
 			<h1 class="section-title">Newsfeed</h1>
       <div class="newsfeed-container">
 
         <div class="newsfeed-row">
-          <div class="row-text">
+          <div data-aos="fade-up"  class="row-text">
             <div class="row-topic">
+              <p>BLOG</p>
+            </div>
+
+            <h1 data-aos="fade-right">The Cracked Eggs Blog Is Released!</h1>
+            <p data-aos="fade-right">Post by The Cracked Eggs (April 20, 2021)</p>
+          </div>
+
+          <img data-aos="fade-left"  src= "images/home-images/egg.jpg">
+        </div>
+
+        <div class="newsfeed-row">
+          <div class= "row-text">
+            <div data-aos="fade-up"  class= "row-topic">
+              <p>BLOG</p>
+            </div>
+
+            <h1 data-aos="fade-right">The Cracked Eggs Blog Is Now Starting Development</h1>
+            <p data-aos="fade-right">Post by The Cracked Eggs (March 26, 2021)</p>
+          </div>
+
+          <img data-aos="fade-left"  src= "images/home-images/egg.jpg">
+        </div>
+        
+
+        <div class="newsfeed-row">
+          <div class="row-text">
+            <div data-aos="fade-up"  class="row-topic">
               <p>NEWS</p>
             </div>
-            <h1>TopThreePlayz joins Cracked Eggs!</h1>
-            <p></p>
-          </div>
-          <img src= "images/member-images/unnamed (1).jpg">
-        </div>
 
-        <div class="newsfeed-row">
-          <div class= "row-text">
-            <div class= "row-topic">
-              <p>TOPIC</p>
-            </div>
-            <h1>Second Test News for the NewsFeed</h1>
-            <p>Post by AnnaBanana</p>
+            <h1 data-aos="fade-right">The Cracked Eggs is created!</h1>
+            <p data-aos="fade-right">Post by The Cracked Eggs (September 1, 2020)</p>
           </div>
-          <img src= "images/newsfeed-images/corgi.jpeg">
+
+          <img data-aos="fade-left"  src= "images/home-images/egg.jpg">
         </div>
         
-
-        <div class="newsfeed-row">
-          <div class= "row-text">
-            <div class= "row-topic">
-              <p>TOPIC</p>
-            </div>
-            <h1>Test News thing for the NewsFeed</h1>
-            <p>Post by AnnaBanana</p>
-          </div>
-          <img src= "images/newsfeed-images/corgi.jpeg">
-        </div>
-        
-        <div class="more-posts">
+        <div data-aos="flip-down" class="more-posts">
           <a href= "oldnews.html">Older News</a>
         </div>
       </div>	
 		</div>
 
 		<div id="about">
-			<div class="about-section">
+			<div data-aos="zoom-in" class="about-section">
 				<div class="inner-container">
 					<h1>About Us</h1>
-					<p class="text">The Cracked Eggs are very social and look out for each other. We all look out for each other and get along great. The members of the cracked eggs consist of Jeisa, Minjun, Soha, Elizabeth, Rohit, Krish, Arshveer, Sahil, Anna, Vladi, Owen, Emily, and Shay. Ages ranging from 9—15, we code, we laugh, we have fun, and we argue</p>
+					<p class="text">The Cracked Eggs are very social and look out for each other. We all look out for each other and get along great. The members of the cracked eggs consist of Jeisa, Minjun, Soha, Elizabeth, Rohit, Krish, Arshveer, Sahil, Anna, Vladi, Owen, Emily, and Shay. Ages ranging from 10—15, we code, we laugh, we have fun, and we argue</p>
 				</div>
 			</div>
 		</div>
@@ -204,7 +253,7 @@
 			<h1 class="section-title">Members</h1>
 
 			<div class="members">				 
-        <div class="member">					 
+        <div data-aos="zoom-in" class="member">					 
           <img src="images/member-images/jeisa.png">					 
           <h2>JeisaN</h2>
         
@@ -215,13 +264,13 @@
 					<div class="skills">
 						<p class="html">HTML</p>
 						<p class="css">CSS</p>
-            <p class="js"> Js</p>
+            <p class="js"> JS</p>
 					</div>
         </div>
 				 
-        <div class="member">					 
+        <div data-aos="zoom-in" data-aos="zoom-in" class="member">					 
           <img src="images/member-images/minjunlmao.png">					 
-					<h2>Minjun (Developer)</h2>	 
+					<h2>Minjun</h2>	 
 					<h3>Web Development</h3>
 
 					<p>I am 12 year old and I graduated from Hackingtons Code School. I like doing HTML/CSS and I have made amazing websites. I like to bike and play basketball. I also like to watch TV. If you want to contact me you can contact me at minjunroe@gmail.com.</p>
@@ -229,7 +278,7 @@
 					<div class="skills">
 						<p class="html">HTML</p>
 						<p class="css">CSS</p>
-            <p class = "js">Js</p>
+            <p class = "js">JS</p>
             <p class = "scratch">Scratch</p>
             <p class = "python">Python</p>
 						<p class = "unity">Unity</p>
@@ -237,7 +286,7 @@
 					</div>	 
         </div>
 				 
-        <div class="member">					 
+        <div data-aos="zoom-in" class="member">					 
           <img src="images/member-images/rohit.png">					 
           <h2>RohitP</h2>					 
           <h3>Game Developer</h3>		
@@ -251,7 +300,7 @@
 					</div>	  	
         </div>
 				 
-        <div class="member">					 
+        <div data-aos="zoom-in" class="member">					 
           <img src="images/member-images/soha.jpg">					 
           <h2>SohaS</h2>		 
           <h3>Web Developer</h3>
@@ -260,11 +309,11 @@
 					<div class = "skills">
 						<p class = "html">HTML</p>
 						<p class = "css">CSS</p>
-            <p class = "js"> Js</p>
+            <p class = "js"> JS</p>
 					</div>	 
         </div>
 				 
-        <div class="member">					 
+        <div data-aos="zoom-in" class="member">					 
           <img src="images/member-images/skidface.png">					 
          	<h2>OwenS (SkidFace)</h2>					 
          	<h3>Game Developer</h3>	
@@ -279,37 +328,36 @@
 					</div>	 
         </div>
 				 
-        <div class="member">					 
+        <div data-aos="zoom-in" class="member">					 
           <img src="images/member-images/liz.jpg">			
-          
+          <br>
           <h2>ElizabethH</h2>					 
-          <h3>Account Management</h3>
-
-          <p>Hello, I'm Elizabeth and I'm a web developer as well as the account manager for the Cracked Eggs. I am also the creator of Lizblog. I enjoy coding and watching YouTube on my free time and I have a Diamond Award at Hackingtons.</p>
+          <h3>Account Management/Web Dev</h3>
+          <p>Hello, I'm Elizabeth and I'm a web developer as well as the account manager for the Cracked Eggs. I am also the creator of Lizblog. I enjoy coding and watching YouTube on my free time and I have a Diamond Award at Hackingtons. If you want to contact me, my email is elizthegr8@gmail.com</p>
 
         		<div class = "skills">
 						<p class = "html">HTML</p>
 						<p class = "css">CSS</p>
-            <p class = "js">Js</p>
+            <p class = "js">JS</p>
             <p class = "scratch">Scratch</p>
             <p class = "python">Python</p>
 						<p class = "unity">Unity</p>
 					</div>	  
         </div>
 				 
-        <div class="member">					 
+        <div data-aos="zoom-in" class="member krishs1">					 
           <img src="images/member-images/krish.gif">			
           <br>
           <br>
-          <Br>		 
-          <h2>KrishS1 (Developer)</h2>					 
+          <br>		 
+          <h2>KrishS1</h2>					 
           <h3>Web Developer</h3>
-          <p>Hi, I'm Krish, and I enjoy playing Minecraft. I also like coding and M I N E C R A F T. One of my best website is Volska. It is the second most voted project in Hackingtons. I know many other skills & languages such as Bootstrap, Jquery, and PHP. My email is, krishsuisun@gmail.com.</p>
+          <p>Hi, I'm Krish, and I enjoy playing Minecraft. I also like coding and M I N E C R A F T. One of my best website is Volska. It is the second most voted project in Hackingtons. I love hosting websites on github. I also know many other skills & languages such as Bootstrap, Jquery, and PHP. i love dogs, My email is krishsuisun@gmail.com.</p>
 
         	<div class = "skills">
 						<p class = "html">HTML</p>
 						<p class = "css">CSS</p>
-            <p class = "js">Js</p>
+            <p class = "js">JS</p>
             <p class = "scratch">Scratch</p>
             <p class = "python">Python</p>
 						<p class = "unity">Unity</p>
@@ -319,12 +367,12 @@
 					</div>
         </div>
 				 
-      	<div class="member">					 
+      	<div data-aos="zoom-in" class="member">					 
           <img src="images/member-images/emily.jpg">					 
           <h2>EmilyT</h2>					 
           <h3>Web Developer</h3>		
           
-          <p>Hi! I'm Emily, and I'm a website developer.I like to bake, play with my dogs, and watch marine life.  ᵢ ₕₐₜₑ ₛₑₐ cᵤcᵤₘbₑᵣₛ I started Hackingtons not to long ago and I have been having a blast ever since! ⁱ ˡⁱᵏᵉ ᵉⁿᵈᵉʳᵐᵉⁿ
+          <p>Hello! Yup its me! Emily the one and only. I really enjoy coding, baking, and playing with my 2 dogs. I also LOVE to play minecraft! I started Hackingtons not to long ago; and ever since, I have been having an awesome time learning to code and making friends!!
  Also if you want to contact me my email is emilytrif@gmail.com!!</p>
 
 					<div class = "skills">
@@ -333,9 +381,9 @@
 					</div>		 
         </div>
 				 
-         <div class="member">					 
+         <div data-aos="zoom-in" class="member">					 
           <img src="images/member-images/anna.jpeg">					 
-          <h2>AnnaC (Developer)</h2>					 
+          <h2>AnnaC</h2>					 
           <h3>Web Developer</h3>
           <p>I'm AnnaBannana! I have been at Hackingtons for almost a year and a half, but only started coding a lot during quarantine. I love to read and make websites. I also swim competitively. Fun fact: my favorite ice cream is cookies and cream and I like Marvel movies.</p>				 
         	<div class = "skills">
@@ -344,7 +392,7 @@
 					</div>
          </div>
 				 
-         <div class="member">					 
+         <div data-aos="zoom-in" class="member">					 
           <img src="images/member-images/image.png">					 
           <h2>SahilN</h2>					 
           <h3>Web Developer</h3>
@@ -352,40 +400,42 @@
 					<div class = "skills">
 						<p class = "html">HTML</p>
 						<p class = "css">CSS</p>
-            <p class = "js"> Js</p>
+            <p class = "js"> JS</p>
 					</div>
          </div>
 				 
-         <div class="member">					 
-          <img src="images/member-images/shay.jpg">					 
+         <div data-aos="zoom-in" class="member">					 
+          <img src="images/member-images/shay.gif">					 
           <h2>ShayM</h2>					 
-          <h3>Makes Memes</h3>
-          <p>Hi, My name is Shay. I like making unity projects & memes.</p>				 
+          <h3>Makes M̶e̶m̶e̶s̶ Funny Haha's</h3>
+          <p>Hi I am Shay, I'm not good at writing long bio's and stuff so i'll make it short. I like being in a room with almost zero sunlight at any point in time (while coding). I like to animate and play minecraft. Thats it I told you im not writing a big bio now shoo.</p>
+
 					<div class = "skills">
 						<p class = "html">HTML</p>
 						<p class = "css">CSS</p>
-            <p class = "js"> Js</p>
+            <p class = "js"> JS</p>
             <p class = "scratch">Scratch</p>
 						<p class = "unity">Unity</p>
 					</div>
          </div>
 				 
-        <div class="member vladik">					 
+        <div data-aos="zoom-in" class="member">					 
           <img src="images/member-images/vladik.gif">					 
          	<h2>VladiK</h2>					 
           <h3>Web Developer</h3>
-          <p>Hi, I'm Vladi, and I'm a front-end developer. I am currently working on my portfolio.</p>
+          <p>Hi, I'm Vladi, and I'm a front-end developer. I am currently working on my portfolio. I am Russian and like cats. I have gotten a gold star for a project called KittyKars. If you want to check it out go to KittyKars.netlify.app</p>
+
 					<div class = "skills">
 						<p class = "html">HTML</p>
 						<p class = "css">CSS</p>
-            <p class = "js"> Js</p>
+            <p class = "js"> JS</p>
             <p class = "scratch">Scratch</p>
             <p class = "python">Python</p>
 						<p class = "html">BASIC</p>
 					</div>
         </div>
 
-				<div class="member">				
+				<div data-aos="zoom-in" class="member">				
           <img src="images/member-images/unnamed (1).jpg">	
           <h2>Arshveer</h2>
           <h3>Web Dev/Scripter</h3>
@@ -393,42 +443,82 @@
           <div class="skills">		
             <p class = "html">HTML</p>
 						<p class = "css">CSS</p>
-            <p class = "js">Js</p>
+            <p class = "js">JS</p>
             <p class = "python">Python</p>
 						<p class = "unity">Unity</p>
-            <p class = "github">GitHub</p>
+           <p class = "github">Github</p>
             <p class = "java">Java</p>
             </div>         
         </div>
 			</div>
     </div>
 
-    <div id= "contact">
-    <form action="mailTo:dozenofcrackedeggs@gmail.com,minjunroe@gmail.com,elizthegr8@gmail.com,krishsuisun@gmail.com,xaediaa@gmail.com">
-        <div class="container">
-          <div class="contact-box">
-              <div class="left"> </div>
-              <div class="right">
-                <h2 class="section-title">Contact Us</h2>
-                <br>
-                <input type="text" class="field" placeholder="Your Name" required>
-                <input type="email" class="field" placeholder="Your Email" required>
-                <input type="text" class="field" placeholder="Phone">
-                <textarea placeholder="Message" class="field"></textarea>
-                <a href="#">
-                <button class="btn">Send</button>
-                </a>
-              </div>
-          </div>
-        </div>
-    </form>
+		<div id= "contact">
+			<form action = "mailTo:dozenofcrackedeggs@gmail.com?cc=minjunroe@gmail.com, krishsuisun@gmail.com, xaediaa@gmail.com, elizthegr8@gmail.com, emilytrif@gmail.com">
+					<div class="left">
+						<img data-aos="zoom-in" src="images/other-images/Contact Egg.png" alt="contact-image">
+					</div>
+
+					<div class="right">
+						<h1>Contact Us</h1>
+
+						<div class="contact_content">
+								<input data-aos="fade-in" class="field" type="text" name="name" placeholder="Name" required>
+								<input data-aos="fade-in" class="field" type="email" name="name" placeholder="Email" required>
+								<input data-aos="fade-in" class="field" type="text" name="name" placeholder="Phone" required>
+								<textarea data-aos="fade-in" class="field" type="text" name="name" placeholder="Message" rows = "8" cols = "30" required></textarea>
+
+							<button data-aos="fade-in" type = "submit">Send Message</button>
+						</div>
+					</div>
+			</form>
+		</div>
+  
+		<footer>
+			<h2>The <span>Cracked</span> Eggs</h2>
+
+			<ul class="icons">
+				<li><a href = "https://github.com/crackedeggs" target="_blank"><i class="fab fa-github"></i></a></li>
+				<li><a href="https://www.instagram.com/crackedeggs13" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.twitter.com/crackedeggs13" target="_blank"><i class="fab fa-twitter"></i></a></li>
+			</ul>
+
+			<div class="copyright">
+				<p>The Cracked Eggs © 2021 | All rights reserved</p>
+			</div>
+		</footer>
+
+    <div class="toggle">
+      <div id="dark_mOde" class="switch darkmode display_none"> <span class="dark-mode-label">Dark Mode:</span> <span class="inner-switch" id="button23">OFF</span> </div>
     </div>
- 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="modal.js"></script>
+		</div>
+    <script>
+         		// If darkmode is on display white text
+         		$('.darkmode').css('color', 'white');
+         		$('.dark-mode-label').css('color', 'white');
+              else {
+         		$('.darkmode').css('color', 'black');
+         		$('.dark-mode-label').css('color', 'black');
+         	}
+        }
+    </script>
+    <script>		
+      setTimeout(function(){
+				$(".loader-bg").fadeToggle();
+			}, 3000);
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="javascript/modal.js"></script>
+    <script src="javascript/darkmode.js"></script>
+		<script src="javascript/load.js"></script>
+		<script src="javascript/hamburger.js"></script>
   </body>
 </html>
