@@ -17,7 +17,7 @@
 .dark, .dark body, .dark #newsfeed, .dark #members, .dark nav, .dark #newsfeed .newsfeed-row, .dark footer, .dark footer h2, .dark footer .fab, .dark .inner-container, .dark footer .copyright{
   background-color: rgb(44, 44, 44);
     color: white;
-    transition: 0.3s all;
+    transition: 0.2s all;
 }
 
  .dark nav .nav-link-contact li a{
@@ -100,4 +100,16 @@ background-color: white !important;
 }
 .dark .hamburger-inner::after{
 background-color: white !important;
+}
+
+.dark .nav-links li a:after{
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width .3s;
+}
+
+.dark .nav-link:hover:after{
+  width: 100%;
+  transition: width .3s;
 }
