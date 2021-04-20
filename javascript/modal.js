@@ -10,7 +10,7 @@ var modalAnimation = gsap.timeline();
 
 setTimeout(function(){
 	modalAnimation.fromTo(".modal", 1, {opacity: 0, scale: 0}, {opacity: 1, scale: 1, ease: Power2.easeInOut});
-}, 3100)
+}, 3000)
 
 // Make the advertisement hidden
 async function removeModal() {

@@ -23,6 +23,7 @@ button.addEventListener('click', function() {
     label.style.color = '#000';
     button.textContent = 'Off';
   }
+	
   else {
     document.body.classList.add('dark');
     button.textContent = 'On';
