@@ -65,6 +65,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+
     <div class="loader-bg">
       <div class="loader-box">
         <h1></h1>
@@ -84,15 +85,20 @@
         </div>
       </div>
     </div>
+
     <div class="filter" onclick="removeModal()"></div>
+
     <div class="modal">
       <button class="modal-leave" onclick="removeModal()"><i class="fas fa-times"></i></button>
       <h2>Sign up for our newsletter</h2>
       <p>Get our latest news about our members and new updates to the website.</p>
-      <form>
+
+      <form action = "#">
+
         <input type="email" placeholder="Email adress..." required />
-        <button type="submit"><a href="mailTo:thecrackedeggsofficial@gmail.com?bcc=vladikh06@gmail.com" style="color: black;">Submit</a></button>
+        <button type="submit">Submit</button>
       </form>
+
       <div class="email"></div>
       <img src="images/other-images/favicon.png" alt="" />
     </div>
@@ -118,7 +124,7 @@
       <div class="title">
         <h1>The <span>Cracked</span> Eggs</h1>
         <p>
-          The Cracked Eggs are a group of friends that get along really well. They hang out, play video games, and code together. We have fun and the best time of our lives. It only started with 6 people but it slowly expanded. Now, we have a total of 15 members that are the greatest friends alive.
+          The Cracked Eggs are a group of friends that get along really well. They hang out, play video games, and code together. We have fun and the best time of our lives. It only started with 6 people but it slowly expanded. Now, we have a total of 17 members that are the greatest friends alive.
         </p>
         <div class="links">
           <a href="#members">Members</a>
@@ -130,50 +136,58 @@
       <h1 class="section-title">Posts</h1>
       <div class="posts">
         <div data-aos="fade-right" class="post">
-          <div class="post-image">
-            <img src="images/post-images/cube.jpg" />
-          </div>
-          <div class="post-description">
-            <div class="post-title">
-              <h2>BLOG DISCLAIMER</h2>
-              <h4 class="post-text">Please keep in mind that everyone in the Cracked Eggs are students, with their own responsibilities, schoolwork, and extracurriculars. We cannot respond right away all the time.</h4>
-              <p>By: Xaediaa/Jeisa</p>
+            <div class="post-image">
+              <video autoplay muted loop id="myVideo">
+	            	<source src="egg.MOV" type="video/mp4">
+	            </video>
             </div>
-            <div class="date">
-              <h3>4/12/21</h3>
+            <div class="post-description">
+              <div class="post-title">
+                <h2>Egg animation</h2>
+                <h4 class="post-text">I made a cracked egg animation using procreate. :D</h4>
+                <p>By: Chloe</p>
+              </div>
+              <div class="date">
+                <h3>4/23/21</h3>
+              </div>
             </div>
           </div>
-        </div>
+            <!-- -->
         <div data-aos="fade-left" class="post">
           <div class="post-image">
-            <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/120791781/original/4cb47ad6a2b5930c07c07b3b26839f366dd5529b/say-anything-you-want-in-a-poor-sans-undertale-cosplay.jpg">
+            <img src="https://thumbs.dreamstime.com/b/funny-cat-smiling-tongue-very-smile-cardboard-134655541.jpg" />
           </div>
           <div class="post-description">
             <div class="post-title">
-              <h2>Im Funny</h2>
-              <h4>When Imposter is sus XD im funny</h4>
-              <p>By: Shay</p>
+              <h2>funny cat</h2>
+              <h4 class="post-text">haha its so funny :D</h4>
+              <p>By: G3org3</p>
             </div>
             <div class="date">
-              <h3>4/21/21</h3>
+              <h3>4/23/21</h3>
             </div>
           </div>
         </div>
+         <!-- -->
         <div data-aos="fade-up" class="post">
           <div class="post-image">
-            <img src="images/post-images/icecream.jpeg" />
+            <img src="images/post-images/vladissecretbee.png" />
           </div>
           <div class="post-description">
             <div class="post-title">
-              <h2>Cookies and Cream Ice Cream</h2>
-              <h4 class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper dignissim cras tincidunt lobortis.</h4>
-              <p>By: AnnaBannana</p>
+              <h2>bee</h2>
+              <h4 class="post-text">buzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</h4>
+              <p>By: RussianCat</p>
             </div>
             <div class="date">
-              <h3>4/5/21</h3>
+              <h3>4/22/21</h3>
             </div>
           </div>
         </div>
+         <!-- -->
+
+
+
       </div>
       <div data-aos="flip-down" class="more-posts">
         <a href="posts.html">More Posts</a>
@@ -182,16 +196,16 @@
     <div id="newsfeed">
       <h1 class="section-title">Newsfeed</h1>
       <div class="newsfeed-container">
-        <!-- <div class="newsfeed-row">
+        <div class="newsfeed-row">
           <div class="row-text">
             <div data-aos="fade-up" class="row-topic">
               <p>MEMBER</p>
             </div>
-            <h1 data-aos="fade-right">Chloe joins The Cracked Eggs!</h1>
-            <p data-aos="fade-right">Posted by The Cracked Eggs (April 22, 2021)</p>
+            <h1 data-aos="fade-right">Soha left The Cracked Eggs.</h1>
+            <p data-aos="fade-right">Posted by The Cracked Eggs (April 24, 2021)</p>
           </div>
           <img data-aos="fade-left" src="images/home-images/egg.jpg" />
-          </div> -->
+          </div>
         <div class="newsfeed-row">
           <div class="row-text">
             <div data-aos="fade-up" class="row-topic">
@@ -212,18 +226,7 @@
           </div>
           <img data-aos="fade-left" src="images/home-images/egg.jpg" />
         </div>
-        <!-- -->
-        <div class="newsfeed-row">
-          <div class="row-text">
-            <div data-aos="fade-up" class="row-topic">
-              <p>BLOG</p>
-            </div>
-            <h1 data-aos="fade-right">The Cracked Eggs Blog Is Now Starting Development</h1>
-            <p data-aos="fade-right">Posted by The Cracked Eggs (March 26, 2021)</p>
-          </div>
-          <img data-aos="fade-left" src="images/home-images/egg.jpg" />
-        </div>
-        <!-- -->
+        
         <div data-aos="flip-down" class="more-posts">
           <a href="oldnews.html">Older News</a>
         </div>
@@ -234,7 +237,7 @@
         <div class="inner-container">
           <h1>About Us</h1>
           <p class="text">
-            The Cracked Eggs are very social and look out for each other. We all look out for each other and get along great. The members of the cracked eggs consist of Jeisa, Minjun, Soha, Elizabeth, Rohit, Krish, Arshveer, George, Sahil, Anna, Vladi, Owen, Emily, Naomi, and Shay. Ages ranging from 10—15, we code, we laugh, we have fun, and we argue.
+            The Cracked Eggs are very social and look out for each other. We all look out for each other and get along great. The members of the cracked eggs consist of Jeisa, Minjun, Soha, Elizabeth, Rohit, Krish, Arshveer, George, Sahil, Anna, Vladi, Owen, Emily, Naomi, Colton, Chloe, and Shay. Ages ranging from 10—15, we code, we laugh, we have fun, and we argue.
           </p>
         </div>
       </div>
@@ -277,7 +280,7 @@
             <p class="c0">React</p>
           </div>
         </div>
-        <div data-aos="zoom-in" class="member">
+        <!-- <div data-aos="zoom-in" class="member">
           <img src="images/member-images/4.jpg" />
           <h2>SohaS</h2>
           <h3>Web Developer</h3>
@@ -294,7 +297,7 @@
             <p class="python">Python</p>
             <p class="scratch">Scratch</p>
           </div>
-        </div>
+        </div> -->
         <div data-aos="zoom-in" class="member">
           <img src="images/member-images/rohit.png" />
           <h2>RohitP</h2>
@@ -420,7 +423,7 @@
           <img src="images/member-images/shay.gif" />
           <h2>ShayM</h2>
           <h3>Makes <span class="forshayfromvladi">Memes</span> Funny Haha's</h3>
-          <a href="mailto:shaymcloughlin07@gmail.com" class="unknown">
+          <a href="mailto:shaymcloughlin07@gmail.com">
             <h4>Email: shaymcloughlin07@gmail.com</h4>
           </a>
           <p>
@@ -503,8 +506,8 @@
             <p class="unity">Unity</p>
           </div>
         </div>
-        <!-- <div data-aos="zoom-in" class="member">
-          <img src="images/member-images/chloe.png" />
+        <div data-aos="zoom-in" class="member">
+          <img src="images/member-images/chloe.gif" />
           <h2>Chloe</h2>
           <h3>Web Developer</h3>
           <a href="mailto:ClozaClover123@gmail.com">
@@ -517,8 +520,26 @@
             <p class="html">HTML</p>
             <p class="css">CSS</p>
             <p class="js">JS</p>
+            <p class="python">Python</p>
           </div>
-          </div> -->
+          </div>
+
+          <div data-aos="zoom-in" class="member">
+          <img src="images/member-images/A.jpg" />
+          <h2>ColtonC</h2>
+          <h3>Web Developer</h3>
+          <a href="javascript:void(0)" class="unknown">
+            <h4>Email: Hidden</h4>
+          </a>
+          <p></p>
+          <div class="skills">
+            <p class="html">HTML</p>
+            <p class="css">CSS</p>
+            <p class="js">JS</p>
+            <p class="python">Python</p>
+            <p class="unity">Unity</p>
+          </div>
+        </div>
       </div>
     </div>
     <div id="contact">
@@ -529,14 +550,14 @@
         <div class="right">
           <h1>Contact Us</h1>
           <div class="contact_content">
-            <input data-aos="fade-in" class="field" type="text" name="name" placeholder="Name" required />
-            <input data-aos="fade-in" class="field" type="email" name="name" placeholder="Email" required />
-            <input data-aos="fade-in" class="field" type="text" name="name" placeholder="Phone (Optional)" />
-            <textarea data-aos="fade-in" class="field" type="text" name="name" placeholder="Message" rows="8" cols="30" required></textarea>
+            <input data-aos="fade-up" class="field" type="text" name="name" placeholder="Name" required />
+            <input data-aos="fade-down" class="field" type="email" name="name" placeholder="Email" required />
+            <input data-aos="fade-up" class="field" type="text" name="name" placeholder="Phone (Optional)" />
+            <textarea data-aos="fade-down" class="field" type="text" name="name" placeholder="Message" rows="8" cols="30" required></textarea>
             <button data-aos="fade-in" type="submit">
-            <a href="mailTo:thecrackedeggsofficial@gmail.com?cc=minjunroe@gmail.com, krishsuisun@gmail.com, elizthegr8@gmail.com, emilytrif@gmail.com, vladikh06@gmail.com, gshershen2008@gmail.com" style="color: black;">Send Message</a>
+            <a href="mailTo:thecrackedeggsofficial@gmail.com?cc=minjunroe@gmail.com, krishsuisun@gmail.com, elizthegr8@gmail.com, emilytrif@gmail.com, vladikh06@gmail.com, gshershen2008@gmail.com, ClozaClover123@gmail.com" style="color: black;">Send Message</a>
             </button>
-            <div class="contact-member" data-aos="fade-in">
+            <div class="contact-member" data-aos="zoom-out">
               <h4>Or</h4>
               <button type="button"><a href="contact.html">Contact members separately</a></button>
             </div>
